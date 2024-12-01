@@ -1,3 +1,6 @@
+Com base nas pastas e arquivos fornecidos, aqui está a versão atualizada do seu **README.md**. Ele foi adaptado para refletir corretamente a estrutura do projeto e incluir os detalhes sobre como contribuir, a licença, e as demais seções mencionadas:
+
+```markdown
 # Controle de Tarefas e Produtividade
 
 Este é um projeto de backend para um sistema de **controle de tarefas e produtividade**, usando **Node.js**, **Express**, **Sequelize**, e **MySQL**. O sistema permite a criação, leitura, atualização e exclusão de tarefas, bem como a categorização das mesmas e gerenciamento de usuários.
@@ -20,28 +23,78 @@ Antes de começar, você precisará ter o seguinte instalado em sua máquina:
 
 Além disso, se você estiver usando variáveis de ambiente, o pacote `dotenv` é necessário.
 
-## Configuração do Projeto
+## Como Baixar o Repositório
 
-### 1. Clone o repositório
+Clone o repositório para a sua máquina local com o comando:
 
 ```bash
 git clone https://github.com/seu-usuario/controle-de-tarefas-e-produtividade.git
 cd controle-de-tarefas-e-produtividade
 ```
 
-### 2. Instale as dependências
-
-Use o npm (ou yarn, se preferir) para instalar as dependências do projeto:
+Em seguida, instale as dependências:
 
 ```bash
 npm install
 ```
 
-### 3. Configure o banco de dados
+## Como Contribuir
+
+1. **Fork** o repositório.
+2. Crie uma nova **branch**:
+   ```bash
+   git checkout -b nome-da-sua-branch
+   ```
+3. Faça suas alterações.
+4. Commit suas alterações:
+   ```bash
+   git commit -m "Descrição das alterações"
+   ```
+5. **Push** para a sua branch:
+   ```bash
+   git push origin nome-da-sua-branch
+   ```
+6. Crie um **pull request** para o repositório original.
+
+## Estrutura do Projeto
+
+A estrutura de pastas do projeto é organizada da seguinte forma:
+
+```
+controle_de_tarefas_e_produtividade/
+├── controllers/
+│   ├── categoriaController.js      # Controlador para operações de categoria
+│   ├── tarefaController.js         # Controlador para operações de tarefas
+│   └── usuarioController.js        # Controlador para operações de usuários
+├── middleware/
+│   └── authMiddleware.js           # Middleware para autenticação
+├── models/
+│   ├── categoria.js                # Modelo de dados para categorias
+│   ├── tarefa.js                   # Modelo de dados para tarefas
+│   ├── usuario.js                  # Modelo de dados para usuários
+│   └── index.js                    # Configuração do Sequelize
+├── routes/
+│   ├── categoriaRoutes.js          # Rotas para categorias
+│   ├── tarefaRoutes.js             # Rotas para tarefas
+│   ├── usuarioRoutes.js            # Rotas para usuários
+│   ├── db.js                       # Conexão com o banco de dados
+│   └── index.js                    # Roteamento principal
+├── .env                             # Arquivo de variáveis de ambiente
+├── CONTRIBUTING.md                  # Diretrizes de contribuição para o projeto
+├── .gitignore                       # Arquivo de configuração do Git
+├── LICENSE                          # Licença do projeto (Creative Commons)
+├── package-lock.json                # Arquivo de bloqueio de dependências
+├── package.json                     # Configuração do NPM e dependências
+└── README.md                        # Documento README (este arquivo)
+```
+
+## Configuração do Projeto
+
+### 1. Configure o Banco de Dados
 
 Antes de iniciar a aplicação, crie um banco de dados no MySQL e adicione suas credenciais ao arquivo `.env`.
 
-#### Exemplo de configuração no `.env`
+Exemplo de configuração no `.env`:
 
 ```env
 MYSQL_DATABASE=controle_de_tarefas
@@ -52,14 +105,7 @@ JWT_SECRET=seu-segredo-jwt
 PORT=3000
 ```
 
-- **`MYSQL_DATABASE`**: Nome do banco de dados.
-- **`MYSQL_USER`**: Usuário do banco de dados.
-- **`MYSQL_PASSWORD`**: Senha do banco de dados (deixe em branco se não houver).
-- **`MYSQL_HOST`**: Endereço do servidor MySQL (geralmente `localhost`).
-- **`JWT_SECRET`**: Chave secreta usada para gerar tokens JWT.
-- **`PORT`**: Porta em que o servidor rodará.
-
-### 4. Configure o banco de dados MySQL
+### 2. Crie o Banco de Dados
 
 Crie o banco de dados no MySQL:
 
@@ -68,7 +114,7 @@ mysql -u root -p
 CREATE DATABASE controle_de_tarefas;
 ```
 
-### 5. Execute as migrations
+### 3. Execute as Migrations
 
 Após configurar o banco de dados, execute as migrations para criar as tabelas:
 
@@ -76,7 +122,7 @@ Após configurar o banco de dados, execute as migrations para criar as tabelas:
 npx sequelize-cli db:migrate
 ```
 
-### 6. Inicie o servidor
+### 4. Inicie o Servidor
 
 Agora, você pode iniciar o servidor com o seguinte comando:
 
@@ -84,39 +130,9 @@ Agora, você pode iniciar o servidor com o seguinte comando:
 npm start
 ```
 
-Isso deve iniciar o servidor na porta 3000 (ou a porta definida no `.env`).
+O servidor será iniciado na porta 3000 (ou a porta configurada no arquivo `.env`).
 
-## Estrutura de Pastas
+## Licença
 
-A estrutura de pastas do projeto é organizada da seguinte forma:
-
+Este projeto está licenciado sob a Licença **Creative Commons**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
 ```
-controle_de_tarefas_e_produtividade/
-├── controllers/
-│   ├── authController.js
-│   ├── categoryController.js
-│   └── taskController.js
-├── middleware/
-│   └── authMiddleware.js
-├── models/
-│   ├── Category.js
-│   ├── Task.js
-│   ├── User.js
-│   └── index.js
-├── routes/
-│   ├── authRoute.js
-│   ├── categoryRoutes.js
-│   └── taskRoutes.js
-├── .env
-├── app.js
-├── server.js
-├── package.json
-└── README.md
-```
-
-- **`controllers/`**: Contém a lógica dos controladores para manipulação de dados.
-- **`middleware/`**: Contém middlewares personalizados, como autenticação JWT.
-- **`models/`**: Contém a definição dos modelos de banco de dados, utilizando Sequelize.
-- **`routes/`**: Define as rotas e endpoints da API.
-- **`server.js`**: Arquivo de entrada para iniciar o servidor.
-- **`app.js`**: Arquivo que configura o Express e as rotas.
