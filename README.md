@@ -80,7 +80,7 @@ controle_de_tarefas_e_produtividade/
 │   ├── Models/                      # Subpasta para modelos
 │   │   └── Brainstorm Mapa Mental Minimalista Bege - Back-end.png
 │   ├── UseCase/                     # Subpasta para casos de uso
-│   │   └── Back-end - Casos de uso.pdf
+│   │   └── Back-end-Casos-de-uso.pdf
 │   ├── Fluxo_de_Trabalho.pdf         # PDF do fluxo de trabalho
 │   ├── Ferramentas_Bibliotecas_Frameworks.pdf # PDF de ferramentas
 │   └── Tutorial_de_Contribuicao.pdf  # PDF do tutorial de contribuição
@@ -143,7 +143,7 @@ Abaixo estão os documentos que detalham os diferentes aspectos do projeto, disp
 
 - [Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
 - [Ferramentas, Bibliotecas e Frameworks](./tasksdocs/Ferramentas_Bibliotecas_Frameworks.pdf)
-- [Casos de Uso](./tasksdocs/UseCase/Back-end%20-%20Casos%20de%20uso.pdf)
+- [Casos de Uso](./tasksdocs/UseCase/Back-end-Casos-de-uso.pdf)
 - [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
 
 ## Licença
