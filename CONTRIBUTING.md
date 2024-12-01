@@ -75,4 +75,13 @@ Além disso, é necessário o pacote `dotenv` para carregar as variáveis de amb
 - Escreva testes para garantir que as funcionalidades estão funcionando corretamente.
 - Se possível, adicione a documentação para qualquer novo recurso ou alteração significativa.
 
+## Fluxo de Trabalho
+
+O fluxo de trabalho do repositório segue o modelo de desenvolvimento baseado em **branches**. A cada nova funcionalidade ou correção, crie uma nova **branch**, desenvolva as alterações e, após testar, crie um **pull request** para o `main` branch.
+
+Abaixo, você pode ver o mapa mental que ilustra o fluxo de trabalho:
+
+![Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
+
+
 Agradecemos sua contribuição!
