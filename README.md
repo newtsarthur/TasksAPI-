@@ -1,6 +1,3 @@
-Com base nas pastas e arquivos fornecidos, aqui está a versão atualizada do seu **README.md**. Ele foi adaptado para refletir corretamente a estrutura do projeto e incluir os detalhes sobre como contribuir, a licença, e as demais seções mencionadas:
-
-```markdown
 # Controle de Tarefas e Produtividade
 
 Este é um projeto de backend para um sistema de **controle de tarefas e produtividade**, usando **Node.js**, **Express**, **Sequelize**, e **MySQL**. O sistema permite a criação, leitura, atualização e exclusão de tarefas, bem como a categorização das mesmas e gerenciamento de usuários.
