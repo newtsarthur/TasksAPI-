@@ -1,3 +1,7 @@
+Segue a versão revisada com a seção de autores antes da licença:
+
+---
+
 # Controle de Tarefas e Produtividade
 
 Este é um projeto de backend para um sistema de **controle de tarefas e produtividade**, usando **Node.js**, **Express**, **Sequelize**, e **MySQL**. O sistema permite a criação, leitura, atualização e exclusão de tarefas, bem como a categorização das mesmas e gerenciamento de usuários.
@@ -146,6 +150,20 @@ Abaixo estão os documentos que detalham os diferentes aspectos do projeto, disp
 - [Casos de Uso](./tasksdocs/UseCase/Back-end-Casos-de-uso.pdf)
 - [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
 
+### Mapa Mental do Fluxo de Trabalho - visualização
+
+![Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
+
+## Autores
+
+- **Ana**
+- **Arthur**
+- **Emma**
+- **Luiza**
+- **Matheus**
+
 ## Licença
 
 Este projeto está licenciado sob a Licença **Creative Commons**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
+
+---
