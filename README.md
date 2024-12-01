@@ -129,7 +129,14 @@ npm start
 
 O servidor será iniciado na porta 3000 (ou a porta configurada no arquivo `.env`).
 
+## Fluxo de Trabalho
+
+O fluxo de trabalho do repositório segue o modelo de desenvolvimento baseado em **branches**. A cada nova funcionalidade ou correção, crie uma nova **branch**, desenvolva as alterações e, após testar, crie um **pull request** para o `main` branch.
+
+Abaixo, você pode ver o mapa mental que ilustra o fluxo de trabalho:
+
+![Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
+
 ## Licença
 
 Este projeto está licenciado sob a Licença **Creative Commons**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
-```
