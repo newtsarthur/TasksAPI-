@@ -21,11 +21,11 @@ Para começar a trabalhar no projeto, siga os passos abaixo:
     npm install
     ```
 
-3. **Configure o banco de dados** (certifique-se de que o MySQL esteja instalado e configurado em sua máquina):
+3. **Configure o banco de dados**:
     - Crie um banco de dados chamado `controle_de_tarefas`.
-    - Configure as credenciais do banco de dados no arquivo `.env`.
+    - Configure as credenciais no arquivo `.env`.
 
-    Exemplo de configuração no `.env`:
+    Exemplo de configuração:
     ```env
     MYSQL_DATABASE=controle_de_tarefas
     MYSQL_USER=root
@@ -35,53 +35,56 @@ Para começar a trabalhar no projeto, siga os passos abaixo:
     PORT=3000
     ```
 
-## Pré-requisitos
-
-Antes de começar, verifique se você tem as seguintes ferramentas instaladas:
-
-- [Node.js](https://nodejs.org/)
-- [MySQL](https://www.mysql.com/)
-
-Além disso, é necessário o pacote `dotenv` para carregar as variáveis de ambiente.
-
 ## Como Contribuir
 
-1. **Crie uma nova branch** para a sua contribuição:
+1. **Crie uma nova branch**:
     ```bash
     git checkout -b nome-da-sua-branch
     ```
 
-2. **Faça suas alterações** no código e adicione testes se necessário.
+2. **Faça suas alterações** e teste-as localmente.
 
-3. **Commit suas mudanças**:
+3. **Commit suas mudanças** (recomendamos mensagens claras e informativas):
     ```bash
     git add .
-    git commit -m "Descrição das suas alterações"
+    git commit -m "feat: Descrição do recurso ou correção"
     ```
 
-4. **Suba as mudanças para o seu repositório forked**:
+4. **Suba as mudanças**:
     ```bash
     git push origin nome-da-sua-branch
     ```
 
 5. **Abra um Pull Request**:
-    - No GitHub, vá para a página do repositório original e clique em "New Pull Request".
-    - Compare a sua branch com a branch `dev` e adicione uma descrição do que foi feito.
-    - Clique em "Create Pull Request".
+    - Compare a sua branch com a branch `main` ou `dev`.
+    - Inclua uma descrição clara do que foi feito.
+    - Exemplo de descrição:
+        ```markdown
+        ## Descrição
+        - Implementado CRUD para categorias
+        - Criados testes para validação de entradas
+
+        ## Issues relacionadas
+        - Resolves #12
+        ```
 
 ## Dicas para Contribuições
 
-- Siga as boas práticas de código e mantenha a consistência do projeto.
-- Escreva testes para garantir que as funcionalidades estão funcionando corretamente.
-- Se possível, adicione a documentação para qualquer novo recurso ou alteração significativa.
+- Siga as boas práticas de código e mantenha a consistência.
+- Escreva testes para garantir que suas alterações não introduzam novos bugs.
+- Atualize a documentação (quando necessário) para incluir novas funcionalidades.
 
 ## Documentação de Suporte
 
-Antes de contribuir, consulte os seguintes documentos localizados na pasta [tasksdocs](./tasksdocs/):
+Antes de contribuir, consulte os seguintes documentos na pasta [tasksdocs](./tasksdocs/):
 
 - [Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
 - [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
 - [Casos de Uso](./tasksdocs/UseCase/Back-end%20-%20Casos%20de%20uso.pdf)
 - [Ferramentas, Bibliotecas e Frameworks](./tasksdocs/Ferramentas_Bibliotecas_Frameworks.pdf)
 
-Agradecemos sua contribuição!
+## Licença
+
+Este projeto está licenciado sob a Licença **Creative Commons**. Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+Agradecemos sua contribuição! 😊
