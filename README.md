@@ -146,16 +146,6 @@ Abaixo estão os documentos que detalham os diferentes aspectos do projeto, disp
 - [Casos de Uso](./tasksdocs/UseCase/Back-end-Casos-de-uso.pdf)
 - [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
 
-## Autores
-
-- **Ana**
-- **Arthur**
-- **Emma**
-- **Luiza**
-- **Matheus**
-
 ## Licença
 
 Este projeto está licenciado sob a Licença **Creative Commons**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
-
---- 
