@@ -60,29 +60,37 @@ A estrutura de pastas do projeto é organizada da seguinte forma:
 ```
 controle_de_tarefas_e_produtividade/
 ├── controllers/
-│   ├── categoriaController.js      # Controlador para operações de categoria
-│   ├── tarefaController.js         # Controlador para operações de tarefas
-│   └── usuarioController.js        # Controlador para operações de usuários
+│   ├── categoriaController.js       # Controlador para categorias
+│   ├── tarefaController.js          # Controlador para tarefas
+│   └── usuarioController.js         # Controlador para usuários
 ├── middleware/
-│   └── authMiddleware.js           # Middleware para autenticação
+│   └── authMiddleware.js            # Middleware para autenticação
 ├── models/
-│   ├── categoria.js                # Modelo de dados para categorias
-│   ├── tarefa.js                   # Modelo de dados para tarefas
-│   ├── usuario.js                  # Modelo de dados para usuários
-│   └── index.js                    # Configuração do Sequelize
+│   ├── categoria.js                 # Modelo para categorias
+│   ├── tarefa.js                    # Modelo para tarefas
+│   ├── usuario.js                   # Modelo para usuários
+│   └── index.js                     # Configuração do Sequelize
 ├── routes/
-│   ├── categoriaRoutes.js          # Rotas para categorias
-│   ├── tarefaRoutes.js             # Rotas para tarefas
-│   ├── usuarioRoutes.js            # Rotas para usuários
-│   ├── db.js                       # Conexão com o banco de dados
-│   └── index.js                    # Roteamento principal
-├── .env                             # Arquivo de variáveis de ambiente
-├── CONTRIBUTING.md                  # Diretrizes de contribuição para o projeto
-├── .gitignore                       # Arquivo de configuração do Git
-├── LICENSE                          # Licença do projeto (Creative Commons)
-├── package-lock.json                # Arquivo de bloqueio de dependências
-├── package.json                     # Configuração do NPM e dependências
-└── README.md                        # Documento README (este arquivo)
+│   ├── categoriaRoutes.js           # Rotas para categorias
+│   ├── tarefaRoutes.js              # Rotas para tarefas
+│   ├── usuarioRoutes.js             # Rotas para usuários
+│   ├── db.js                        # Configuração do banco de dados
+│   └── index.js                     # Arquivo principal de rotas
+├── tasksdocs/                        # Pasta para documentação
+│   ├── Models/                      # Subpasta para modelos
+│   │   └── Brainstorm Mapa Mental Minimalista Bege - Back-end.png
+│   ├── UseCase/                     # Subpasta para casos de uso
+│   │   └── Back-end - Casos de uso.pdf
+│   ├── Fluxo_de_Trabalho.pdf         # PDF do fluxo de trabalho
+│   ├── Ferramentas_Bibliotecas_Frameworks.pdf # PDF de ferramentas
+│   └── Tutorial_de_Contribuicao.pdf  # PDF do tutorial de contribuição
+├── .env                              # Variáveis de ambiente
+├── CONTRIBUTING.md                   # Diretrizes de contribuição
+├── .gitignore                        # Configuração de exclusões do Git
+├── LICENSE                           # Arquivo de licença
+├── package-lock.json                 # Bloqueio de dependências
+├── package.json                      # Configuração do NPM
+└── README.md                         # Documento principal do projeto
 ```
 
 ## Configuração do Projeto
@@ -129,13 +137,14 @@ npm start
 
 O servidor será iniciado na porta 3000 (ou a porta configurada no arquivo `.env`).
 
-## Fluxo de Trabalho
+## Documentação
 
-O fluxo de trabalho do repositório segue o modelo de desenvolvimento baseado em **branches**. A cada nova funcionalidade ou correção, crie uma nova **branch**, desenvolva as alterações e, após testar, crie um **pull request** para o `main` branch.
+Abaixo estão os documentos que detalham os diferentes aspectos do projeto, disponíveis na pasta [tasksdocs](./tasksdocs/):
 
-Abaixo, você pode ver o mapa mental que ilustra o fluxo de trabalho:
-
-![Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
+- [Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
+- [Ferramentas, Bibliotecas e Frameworks](./tasksdocs/Ferramentas_Bibliotecas_Frameworks.pdf)
+- [Casos de Uso](./tasksdocs/UseCase/Back-end%20-%20Casos%20de%20uso.pdf)
+- [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
 
 ## Licença
 
