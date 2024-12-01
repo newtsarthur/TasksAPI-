@@ -80,7 +80,7 @@ Antes de contribuir, consulte os seguintes documentos na pasta [tasksdocs](./tas
 
 - [Mapa Mental do Fluxo de Trabalho](./tasksdocs/Models/Brainstorm%20Mapa%20Mental%20Minimalista%20Bege%20-%20Back-end.png)
 - [Tutorial de Contribuição](./tasksdocs/Tutorial_de_Contribuicao.pdf)
-- [Casos de Uso](./tasksdocs/UseCase/Back-end%20-%20Casos%20de%20uso.pdf)
+- [Casos de Uso](./tasksdocs/UseCase/Back-end-Casos-de-uso.pdf)
 - [Ferramentas, Bibliotecas e Frameworks](./tasksdocs/Ferramentas_Bibliotecas_Frameworks.pdf)
 
 ## Licença
