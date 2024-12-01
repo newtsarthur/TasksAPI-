@@ -1,7 +1,3 @@
-Segue a versão revisada com a seção de autores antes da licença:
-
----
-
 # Controle de Tarefas e Produtividade
 
 Este é um projeto de backend para um sistema de **controle de tarefas e produtividade**, usando **Node.js**, **Express**, **Sequelize**, e **MySQL**. O sistema permite a criação, leitura, atualização e exclusão de tarefas, bem como a categorização das mesmas e gerenciamento de usuários.
